@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<title> Enantra 2018</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="e-home.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container-fluid" id="head">
+		<nav class="navbar">
+			<img src="logo.png" id="logo">
+				<ul class="nav navbar-nav navbar-right navbar-fixed" id="nav">
+					<li><a href="#home" id="first">HOME</a></li>
+					<li><a href="#">VISION</a></li>
+					<li><a href="#">VERSION 1.0</a></li>
+				</ul>
+		</nav>
+	</div>
+	<br><br>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+  			<img src="c1.jpg" id="c1">
+		</div>
+		<div class="mySlides fade">
+ 		    <img src="c2.jpg" id="c2">
+		</div>
+		<div class="mySlides fade">
+  			<img src="c3.jpg" id="c3">
+		</div>
+	</div>
+	<br>
+	<div style="text-align:center">
+		 <span class="dot"></span> 
+		 <span class="dot"></span> 
+		 <span class="dot"></span> 
+	</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";  
+		    }
+		    slideIndex++;
+		    if (slideIndex> slides.length) {slideIndex = 1}    
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";  
+		    dots[slideIndex-1].className += " active";
+		    setTimeout(showSlides, 2000); 
+		}
+	</script>
+	<br>
+	<br>
+	<div class="container" id="home">
+		<div class="container" id="clubs">
+			<h3 id="institute"> Our Proud Parent Institution and Student Communities</h3> 
+			<br><br>
+				<img class="img-circle" src="CEGlogo.png" id="ceglogo">
+				<img class="img-circle" src="CEDlogo.png" id="cedlogo">
+				<img class="img-circle" src="capitalizelogo.png" id="capitalizelogo">
+		</div>
+		<br><br>
+		<div class="container" id="p1">
+			<p>Enantra is an au courant entrepreneurship fest hosted by one of India’s oldest colleges, College of Engineering, Guindy, Anna University. Being held in the breathtakingly beautiful campus, Enantra is a colossal fest with six mega events like Runway, Start-Up exhibitions, Google Start–Up weekend, Entrepreneur networking dinner, Start-Up awards and extra bonuses. Working along with the Centre for entrepreneurship Development and Capitalize,a student run entrepreneurship club, Enantra is</p>
+			<h3>South India’s Biggest Entrepreneurship fest.</h3>
+			<p> The humongous footfall of over 600+ participating colleges and 800+ corporates will witness a phenomenal program that will impart every bit of knowledge required for the vying groups of student entrepreneurs, developers, marketing gurus and any like-minded individual.</p>
+		</div>
+	</div>
+	<br>
+	<div class="container" id="vision">
+		<h3 id="v1"> Our Primary Aim </h3>
+		<br>
+		<p id="v2">Having acquired the powerful support of the Government of TamilNadu, <b>TiE</b>, <b>CII</b>,<b> BYST</b> and </b>NEN</b>, this fest is on its way to being branded like none other the city has ever seen. The 6 Degree Talk features an array of radical and pioneering entrepreneurs and executives from the C level of several corporate giants such as C.K. Ranganathan (CavinKare), Velumani(ThyroCare), Laxmi Narayanan (Cognizant), Karthik Kumar (Evam StandUp), Sujayath Ali (Voonik) and Ramesh Babu (Millionaire Barber), Nagaraj (FSS), Auto Annadurai, VarunAgarwal (Alma Mater Store), Vikas Malpani (CommonFloor), CK Kumaravel (Naturals). Every single robust idea, no matter how eccentric or minuscule, can be tested and emboldened here.</p>
+	</div>
+	<div class="container-fluid" id="foot">
+		<div class="col-xs-10" id="copyright">
+			<span class="glyphicon glyphicon-copyright-mark"><b> 2017 Capitalize, The Entrepreneurship Club of CEG, ACT and SAP Campuses</b></span>
+		</div>
+		<div class="col-xs-2" id="social">
+			<a href="https://www.facebook.com/enantra/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true" data-toggle="tooltip" title="Our FB Page"></i></a>
+            <a href="https://www.instagram.com/enantra.fest/?hl=en"><i class="fa fa-instagram fa-3x" aria-hidden="true" data-toggle="tooltip" title="instagram Account"></i></a>
+        </div>
+	</div>
+	<br><br>	
+</body>
+</html>
