@@ -525,6 +525,11 @@ a:focus, a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+body
+{
+min-width: 200px;
+max-width: 1500px;
+}
 
 .hero-area:before {
   content: '';
@@ -681,6 +686,7 @@ a:focus, a:hover {
   padding: 100px 0;
   background: url("../images/call-to-action/call-to-action-bg-2.jpg");
   background-size: cover;
+  background-position: center;
   color: #fff;
   display: block;
 }
@@ -961,8 +967,12 @@ a:focus, a:hover {
 }
 .clients-logo-slider img
 {
-  min-width: 150px;
-  min-height: 150px;
+  width:100px;
+  height:100px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 200px;
+  max-height:200px;
 }
 
 /*=================================================================
