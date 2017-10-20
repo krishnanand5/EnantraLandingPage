@@ -967,12 +967,22 @@ max-width: 1500px;
 }
 .clients-logo-slider img
 {
-  width:100px;
-  height:100px;
-  min-width: 50px;
+   width:125px;
+   height:125px;
   min-height: 50px;
-  max-width: 200px;
-  max-height:200px;
+  min-width: 50px;
+}
+#i1
+{
+  padding-right: 50px;
+}
+#i2
+{
+  padding-left: 30px;
+}
+#i3
+{
+  padding-left: 60px;
 }
 
 /*=================================================================
